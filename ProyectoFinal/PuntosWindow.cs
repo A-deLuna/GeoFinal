@@ -34,12 +34,29 @@ namespace ProyectoFinal
 					string connectionString = 
 						"Server=localhost;" +
 						"Database=ProyectoFinal;" +
+						"Port=5433;"+
 						"User ID=postgres;" +
 						"Password=amelia;";
 
 
+					IDbConnection dbcon;
+					dbcon = new NpgsqlConnection (connectionString);
+					dbcon.Open ();
+					IDbCommand dbcmd = dbcon.CreateCommand ();
+					string sql = 
+						"SELECT id, nombre, x, y " +
+						"FROM puntos";
+					
+					dbcmd.CommandText = sql;
+					IDataReader reader = dbcmd.ExecuteReader ();
+					while (reader.Read ()) {
+						int id = reader.GetInt32 (reader.GetOrdinal ("id"));
+						string nombre = reader.GetString (reader.GetOrdinal ("nombre"));
+						int x = reader.GetInt32 (reader.GetOrdinal ("x"));
+						int y = reader.GetInt32 (reader.GetOrdinal ("y"));
 
-
+						store.AddNode (new PuntoTreeNode (id, nombre, x, y));
+					}
 
 
 				}
