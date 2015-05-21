@@ -75,6 +75,8 @@
     <Compile Include="PuntosWindow.cs" />
     <Compile Include="gtk-gui\ProyectoFinal.PuntosWindow.cs" />
     <Compile Include="PuntoTreeNode.cs" />
+    <Compile Include="gtk-gui\ProyectoFinal.PuntoDialog.cs" />
+    <Compile Include="PuntoDialog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

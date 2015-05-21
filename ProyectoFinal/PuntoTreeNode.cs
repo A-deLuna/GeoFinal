@@ -4,11 +4,11 @@ namespace ProyectoFinal
 {
 	[Gtk.TreeNode (ListOnly = true)]
 	public class PuntoTreeNode : Gtk.TreeNode{
-		int id;
+		public int db_id;
 
 
 		public PuntoTreeNode (int id, string nombre, int x, int y){
-			this.id = id;
+			this.db_id = id;
 			this.nombre = nombre;
 			this.x = x;
 			this.y = y;

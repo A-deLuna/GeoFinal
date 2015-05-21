@@ -58,10 +58,30 @@ namespace ProyectoFinal
 						store.AddNode (new PuntoTreeNode (id, nombre, x, y));
 					}
 
+					reader.Close ();
+					reader = null;
+					dbcmd.Dispose ();
+					dbcmd = null;
+					dbcon.Close ();
+					dbcon = null;
 
 				}
 				return store;
 			}
+		}
+
+		protected void onAgregarButtonClick (object sender, EventArgs e)
+		{
+			PuntoDialog pd = new PuntoDialog ("new");
+			this.Destroy ();
+		}
+
+		protected void OnEditarButtonClick (object sender, EventArgs e)
+		{
+			PuntoTreeNode tn = (PuntoTreeNode)nodeview1.NodeSelection.SelectedNode;
+
+			PuntoDialog pd = new PuntoDialog ("edit", tn.db_id, tn.nombre, tn.x, tn.y);
+			this.Destroy ();
 		}
 	}
 }

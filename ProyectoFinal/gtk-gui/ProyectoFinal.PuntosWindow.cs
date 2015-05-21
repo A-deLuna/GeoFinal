@@ -87,9 +87,11 @@ namespace ProyectoFinal
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 400;
-			this.DefaultHeight = 300;
+			this.DefaultWidth = 285;
+			this.DefaultHeight = 319;
 			this.Show ();
+			this.button7.Clicked += new global::System.EventHandler (this.onAgregarButtonClick);
+			this.button8.Clicked += new global::System.EventHandler (this.OnEditarButtonClick);
 			this.nodeview1.Realized += new global::System.EventHandler (this.OnNodeViewRealized);
 		}
 	}
