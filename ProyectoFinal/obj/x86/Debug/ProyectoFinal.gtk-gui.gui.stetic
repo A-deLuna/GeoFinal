@@ -213,7 +213,6 @@
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
                 <signal name="Realized" handler="OnNodeViewRealized" />
-                <signal name="ExposeEvent" handler="onNodeViewExposed" />
               </widget>
             </child>
           </widget>

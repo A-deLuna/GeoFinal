@@ -91,7 +91,6 @@ namespace ProyectoFinal
 			this.DefaultHeight = 300;
 			this.Show ();
 			this.nodeview1.Realized += new global::System.EventHandler (this.OnNodeViewRealized);
-			this.nodeview1.ExposeEvent += new global::Gtk.ExposeEventHandler (this.onNodeViewExposed);
 		}
 	}
 }

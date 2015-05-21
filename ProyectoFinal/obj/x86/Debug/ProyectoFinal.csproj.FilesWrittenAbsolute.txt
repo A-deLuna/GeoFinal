@@ -5,3 +5,11 @@
 /home/tony/studying/ProyectoFinal/ProyectoFinal/ProyectoFinal/obj/x86/Debug/ProyectoFinal.exe
 /home/tony/studying/ProyectoFinal/ProyectoFinal/ProyectoFinal/obj/x86/Debug/ProyectoFinal.exe.mdb
 /home/tony/studying/ProyectoFinal/ProyectoFinal/ProyectoFinal/bin/Debug/libstetic.dll
+/home/tony/studying/GeoFinal/ProyectoFinal/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/tony/studying/GeoFinal/ProyectoFinal/obj/x86/Debug/ProyectoFinal.gtk-gui.gui.stetic
+/home/tony/studying/GeoFinal/ProyectoFinal/bin/Debug/ProyectoFinal.exe.mdb
+/home/tony/studying/GeoFinal/ProyectoFinal/bin/Debug/ProyectoFinal.exe
+/home/tony/studying/GeoFinal/ProyectoFinal/obj/x86/Debug/ProyectoFinal.exe
+/home/tony/studying/GeoFinal/ProyectoFinal/obj/x86/Debug/ProyectoFinal.exe.mdb
+/home/tony/studying/GeoFinal/ProyectoFinal/bin/Debug/Npgsql.dll
+/home/tony/studying/GeoFinal/ProyectoFinal/bin/Debug/Mono.Security.dll
