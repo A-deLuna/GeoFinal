@@ -83,6 +83,8 @@
     <Compile Include="Rutas\RutaTreeNode.cs" />
     <Compile Include="Rutas\RutaDialog.cs" />
     <Compile Include="gtk-gui\ProyectoFinal.RutaDialog.cs" />
+    <Compile Include="gtk-gui\ProyectoFinal.BusquedaWindow.cs" />
+    <Compile Include="Busqueda\BusquedaWindow.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

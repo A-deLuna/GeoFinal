@@ -26,4 +26,11 @@ public partial class MainWindow: Gtk.Window
 		RutasWindow rw = new RutasWindow ();
 		rw.Show ();
 	}
+
+	protected void OnBusquedaButtonClick (object sender, EventArgs e)
+	{
+		BusquedaWindow bw = new BusquedaWindow ();
+		bw.Show ();
+
+	}
 }
