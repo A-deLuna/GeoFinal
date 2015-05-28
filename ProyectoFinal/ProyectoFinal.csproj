@@ -72,11 +72,21 @@
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PuntosWindow.cs" />
     <Compile Include="gtk-gui\ProyectoFinal.PuntosWindow.cs" />
-    <Compile Include="PuntoTreeNode.cs" />
     <Compile Include="gtk-gui\ProyectoFinal.PuntoDialog.cs" />
-    <Compile Include="PuntoDialog.cs" />
+    <Compile Include="SingletonDB.cs" />
+    <Compile Include="Puntos\PuntoDialog.cs" />
+    <Compile Include="Puntos\PuntosWindow.cs" />
+    <Compile Include="Puntos\PuntoTreeNode.cs" />
+    <Compile Include="Rutas\RutasWindow.cs" />
+    <Compile Include="gtk-gui\ProyectoFinal.RutasWindow.cs" />
+    <Compile Include="Rutas\RutaTreeNode.cs" />
+    <Compile Include="Rutas\RutaDialog.cs" />
+    <Compile Include="gtk-gui\ProyectoFinal.RutaDialog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Puntos\" />
+    <Folder Include="Rutas\" />
+  </ItemGroup>
 </Project>

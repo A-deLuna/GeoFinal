@@ -10,6 +10,7 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
 	{
+		SingletonDB.Instance.close ();
 		Application.Quit ();
 		a.RetVal = true;
 	}
@@ -18,5 +19,11 @@ public partial class MainWindow: Gtk.Window
 	{
 		PuntosWindow pw = new PuntosWindow ();
 		pw.Show ();
+	}
+
+	protected void OnRutasButtonClick (object sender, EventArgs e)
+	{
+		RutasWindow rw = new RutasWindow ();
+		rw.Show ();
 	}
 }

@@ -73,7 +73,7 @@ public partial class MainWindow
 		this.button4.CanFocus = true;
 		this.button4.Name = "button4";
 		this.button4.UseUnderline = true;
-		this.button4.Label = global::Mono.Unix.Catalog.GetString ("GtkButton");
+		this.button4.Label = global::Mono.Unix.Catalog.GetString ("Rutas");
 		this.hbox1.Add (this.button4);
 		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.button4]));
 		w4.Position = 1;
@@ -131,5 +131,6 @@ public partial class MainWindow
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.button3.Clicked += new global::System.EventHandler (this.OnPuntosButtonClick);
+		this.button4.Clicked += new global::System.EventHandler (this.OnRutasButtonClick);
 	}
 }

@@ -92,7 +92,7 @@ namespace ProyectoFinal
 			this.Show ();
 			this.button7.Clicked += new global::System.EventHandler (this.onAgregarButtonClick);
 			this.button8.Clicked += new global::System.EventHandler (this.OnEditarButtonClick);
-			this.nodeview1.Realized += new global::System.EventHandler (this.OnNodeViewRealized);
+			this.button9.Clicked += new global::System.EventHandler (this.OnEliminarButtonClick);
 		}
 	}
 }
