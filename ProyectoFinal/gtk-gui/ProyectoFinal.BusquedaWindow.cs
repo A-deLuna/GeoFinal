@@ -17,6 +17,46 @@ namespace ProyectoFinal
 		private global::Gtk.ComboBoxEntry comboboxentry1;
 		
 		private global::Gtk.ComboBoxEntry comboboxentry2;
+		
+		private global::Gtk.ScrolledWindow GtkScrolledWindow;
+		
+		private global::Gtk.TextView textview5;
+		
+		private global::Gtk.Label label4;
+		
+		private global::Gtk.Label label5;
+		
+		private global::Gtk.ScrolledWindow GtkScrolledWindow1;
+		
+		private global::Gtk.TextView textview6;
+		
+		private global::Gtk.ScrolledWindow GtkScrolledWindow2;
+		
+		private global::Gtk.TextView textview7;
+		
+		private global::Gtk.Label label6;
+		
+		private global::Gtk.ScrolledWindow GtkScrolledWindow3;
+		
+		private global::Gtk.TextView textview9;
+		
+		private global::Gtk.Label label7;
+		
+		private global::Gtk.Entry entry1;
+		
+		private global::Gtk.Entry entry2;
+		
+		private global::Gtk.Entry entry3;
+		
+		private global::Gtk.Button button95;
+		
+		private global::Gtk.VButtonBox vbuttonbox1;
+		
+		private global::Gtk.RadioButton radiobutton2;
+		
+		private global::Gtk.RadioButton radiobutton1;
+		
+		private global::Gtk.Button button96;
 
 		protected virtual void Build ()
 		{
@@ -76,13 +116,190 @@ namespace ProyectoFinal
 			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.comboboxentry2]));
 			w6.X = 112;
 			w6.Y = 82;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
+			this.GtkScrolledWindow.WidthRequest = 128;
+			this.GtkScrolledWindow.HeightRequest = 249;
+			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
+			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
+			this.textview5 = new global::Gtk.TextView ();
+			this.textview5.CanFocus = true;
+			this.textview5.Name = "textview5";
+			this.GtkScrolledWindow.Add (this.textview5);
+			this.fixed1.Add (this.GtkScrolledWindow);
+			global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.GtkScrolledWindow]));
+			w8.X = 353;
+			w8.Y = 260;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label4 = new global::Gtk.Label ();
+			this.label4.Name = "label4";
+			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Inicia");
+			this.fixed1.Add (this.label4);
+			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label4]));
+			w9.X = 368;
+			w9.Y = 230;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label5 = new global::Gtk.Label ();
+			this.label5.Name = "label5";
+			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("Termina");
+			this.fixed1.Add (this.label5);
+			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label5]));
+			w10.X = 512;
+			w10.Y = 231;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.GtkScrolledWindow1 = new global::Gtk.ScrolledWindow ();
+			this.GtkScrolledWindow1.WidthRequest = 128;
+			this.GtkScrolledWindow1.HeightRequest = 250;
+			this.GtkScrolledWindow1.Name = "GtkScrolledWindow1";
+			this.GtkScrolledWindow1.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child GtkScrolledWindow1.Gtk.Container+ContainerChild
+			this.textview6 = new global::Gtk.TextView ();
+			this.textview6.CanFocus = true;
+			this.textview6.Name = "textview6";
+			this.GtkScrolledWindow1.Add (this.textview6);
+			this.fixed1.Add (this.GtkScrolledWindow1);
+			global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.GtkScrolledWindow1]));
+			w12.X = 491;
+			w12.Y = 259;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.GtkScrolledWindow2 = new global::Gtk.ScrolledWindow ();
+			this.GtkScrolledWindow2.WidthRequest = 67;
+			this.GtkScrolledWindow2.HeightRequest = 246;
+			this.GtkScrolledWindow2.Name = "GtkScrolledWindow2";
+			this.GtkScrolledWindow2.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child GtkScrolledWindow2.Gtk.Container+ContainerChild
+			this.textview7 = new global::Gtk.TextView ();
+			this.textview7.CanFocus = true;
+			this.textview7.Name = "textview7";
+			this.GtkScrolledWindow2.Add (this.textview7);
+			this.fixed1.Add (this.GtkScrolledWindow2);
+			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.GtkScrolledWindow2]));
+			w14.X = 645;
+			w14.Y = 259;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label6 = new global::Gtk.Label ();
+			this.label6.Name = "label6";
+			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString ("Distancia");
+			this.fixed1.Add (this.label6);
+			global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label6]));
+			w15.X = 640;
+			w15.Y = 234;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.GtkScrolledWindow3 = new global::Gtk.ScrolledWindow ();
+			this.GtkScrolledWindow3.WidthRequest = 67;
+			this.GtkScrolledWindow3.HeightRequest = 245;
+			this.GtkScrolledWindow3.Name = "GtkScrolledWindow3";
+			this.GtkScrolledWindow3.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child GtkScrolledWindow3.Gtk.Container+ContainerChild
+			this.textview9 = new global::Gtk.TextView ();
+			this.textview9.CanFocus = true;
+			this.textview9.Name = "textview9";
+			this.GtkScrolledWindow3.Add (this.textview9);
+			this.fixed1.Add (this.GtkScrolledWindow3);
+			global::Gtk.Fixed.FixedChild w17 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.GtkScrolledWindow3]));
+			w17.X = 719;
+			w17.Y = 259;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label7 = new global::Gtk.Label ();
+			this.label7.Name = "label7";
+			this.label7.LabelProp = global::Mono.Unix.Catalog.GetString ("Tiempo");
+			this.fixed1.Add (this.label7);
+			global::Gtk.Fixed.FixedChild w18 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label7]));
+			w18.X = 723;
+			w18.Y = 234;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.entry1 = new global::Gtk.Entry ();
+			this.entry1.WidthRequest = 69;
+			this.entry1.HeightRequest = 0;
+			this.entry1.CanFocus = true;
+			this.entry1.Name = "entry1";
+			this.entry1.IsEditable = true;
+			this.entry1.InvisibleChar = '●';
+			this.fixed1.Add (this.entry1);
+			global::Gtk.Fixed.FixedChild w19 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.entry1]));
+			w19.X = 643;
+			w19.Y = 513;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.entry2 = new global::Gtk.Entry ();
+			this.entry2.WidthRequest = 61;
+			this.entry2.CanFocus = true;
+			this.entry2.Name = "entry2";
+			this.entry2.IsEditable = true;
+			this.entry2.InvisibleChar = '●';
+			this.fixed1.Add (this.entry2);
+			global::Gtk.Fixed.FixedChild w20 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.entry2]));
+			w20.X = 726;
+			w20.Y = 511;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.entry3 = new global::Gtk.Entry ();
+			this.entry3.WidthRequest = 61;
+			this.entry3.CanFocus = true;
+			this.entry3.Name = "entry3";
+			this.entry3.IsEditable = true;
+			this.entry3.InvisibleChar = '●';
+			this.fixed1.Add (this.entry3);
+			global::Gtk.Fixed.FixedChild w21 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.entry3]));
+			w21.X = 646;
+			w21.Y = 550;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.button95 = new global::Gtk.Button ();
+			this.button95.CanFocus = true;
+			this.button95.Name = "button95";
+			this.button95.UseUnderline = true;
+			this.button95.Label = global::Mono.Unix.Catalog.GetString ("Mas corta");
+			this.fixed1.Add (this.button95);
+			global::Gtk.Fixed.FixedChild w22 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.button95]));
+			w22.X = 658;
+			w22.Y = 133;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.vbuttonbox1 = new global::Gtk.VButtonBox ();
+			this.vbuttonbox1.Name = "vbuttonbox1";
+			this.fixed1.Add (this.vbuttonbox1);
+			global::Gtk.Fixed.FixedChild w23 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.vbuttonbox1]));
+			w23.X = 659;
+			w23.Y = 65;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.radiobutton2 = new global::Gtk.RadioButton (global::Mono.Unix.Catalog.GetString ("Tiempo"));
+			this.radiobutton2.CanFocus = true;
+			this.radiobutton2.Name = "radiobutton2";
+			this.radiobutton2.DrawIndicator = true;
+			this.radiobutton2.UseUnderline = true;
+			this.radiobutton2.Group = new global::GLib.SList (global::System.IntPtr.Zero);
+			this.fixed1.Add (this.radiobutton2);
+			global::Gtk.Fixed.FixedChild w24 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.radiobutton2]));
+			w24.X = 648;
+			w24.Y = 94;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.radiobutton1 = new global::Gtk.RadioButton (global::Mono.Unix.Catalog.GetString ("Distancia"));
+			this.radiobutton1.CanFocus = true;
+			this.radiobutton1.Name = "radiobutton1";
+			this.radiobutton1.DrawIndicator = true;
+			this.radiobutton1.UseUnderline = true;
+			this.radiobutton1.Group = this.radiobutton2.Group;
+			this.fixed1.Add (this.radiobutton1);
+			global::Gtk.Fixed.FixedChild w25 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.radiobutton1]));
+			w25.X = 648;
+			w25.Y = 63;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.button96 = new global::Gtk.Button ();
+			this.button96.CanFocus = true;
+			this.button96.Name = "button96";
+			this.button96.UseUnderline = true;
+			this.button96.Label = global::Mono.Unix.Catalog.GetString ("GtkButton");
+			this.fixed1.Add (this.button96);
+			global::Gtk.Fixed.FixedChild w26 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.button96]));
+			w26.X = 658;
+			w26.Y = 170;
 			this.Add (this.fixed1);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 656;
-			this.DefaultHeight = 572;
+			this.DefaultWidth = 842;
+			this.DefaultHeight = 615;
 			this.Show ();
+			this.drawingarea1.ExposeEvent += new global::Gtk.ExposeEventHandler (this.onExpose);
+			this.button95.Clicked += new global::System.EventHandler (this.OnCalis);
 		}
 	}
 }

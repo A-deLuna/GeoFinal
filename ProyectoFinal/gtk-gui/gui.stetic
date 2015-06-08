@@ -759,7 +759,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="ProyectoFinal.BusquedaWindow" design-size="886 595">
+  <widget class="Gtk.Window" id="ProyectoFinal.BusquedaWindow" design-size="842 615">
     <property name="MemberName" />
     <property name="Title" translatable="yes">BusquedaWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -792,6 +792,7 @@
             <property name="MemberName" />
             <property name="WidthRequest">292</property>
             <property name="HeightRequest">336</property>
+            <signal name="ExposeEvent" handler="onExpose" />
           </widget>
           <packing>
             <property name="X">24</property>
@@ -1007,8 +1008,9 @@
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">GtkButton</property>
+            <property name="Label" translatable="yes">Mas corta</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnCalis" />
           </widget>
           <packing>
             <property name="X">658</property>

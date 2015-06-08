@@ -60,6 +60,7 @@
       <HintPath>..\Npgsql-2.2.3-net45\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="Mono.Cairo" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
