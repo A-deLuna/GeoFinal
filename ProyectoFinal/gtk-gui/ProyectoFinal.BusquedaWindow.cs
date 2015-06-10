@@ -283,13 +283,14 @@ namespace ProyectoFinal
 			w25.Y = 63;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.button96 = new global::Gtk.Button ();
+			this.button96.WidthRequest = 75;
 			this.button96.CanFocus = true;
 			this.button96.Name = "button96";
 			this.button96.UseUnderline = true;
-			this.button96.Label = global::Mono.Unix.Catalog.GetString ("GtkButton");
+			this.button96.Label = global::Mono.Unix.Catalog.GetString ("Alterna");
 			this.fixed1.Add (this.button96);
 			global::Gtk.Fixed.FixedChild w26 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.button96]));
-			w26.X = 658;
+			w26.X = 660;
 			w26.Y = 170;
 			this.Add (this.fixed1);
 			if ((this.Child != null)) {
@@ -300,6 +301,7 @@ namespace ProyectoFinal
 			this.Show ();
 			this.drawingarea1.ExposeEvent += new global::Gtk.ExposeEventHandler (this.onExpose);
 			this.button95.Clicked += new global::System.EventHandler (this.OnCalis);
+			this.button96.Clicked += new global::System.EventHandler (this.OnAlternaButtonClick);
 		}
 	}
 }

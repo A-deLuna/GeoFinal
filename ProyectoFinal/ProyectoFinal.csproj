@@ -86,6 +86,7 @@
     <Compile Include="gtk-gui\ProyectoFinal.RutaDialog.cs" />
     <Compile Include="gtk-gui\ProyectoFinal.BusquedaWindow.cs" />
     <Compile Include="Busqueda\BusquedaWindow.cs" />
+    <Compile Include="ShortestPath.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

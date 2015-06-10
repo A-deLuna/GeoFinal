@@ -1061,13 +1061,15 @@
         <child>
           <widget class="Gtk.Button" id="button96">
             <property name="MemberName" />
+            <property name="WidthRequest">75</property>
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">GtkButton</property>
+            <property name="Label" translatable="yes">Alterna</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnAlternaButtonClick" />
           </widget>
           <packing>
-            <property name="X">658</property>
+            <property name="X">660</property>
             <property name="Y">170</property>
           </packing>
         </child>

@@ -15,14 +15,14 @@ namespace ProyectoFinal{
             return path;
         }
         */
-        public static void create_path(int i, int j, int [] parent, List<Tuple<int, int > > path){
+        private static void create_path(int i, int j, int [] parent, List<Tuple<int, int > > path){
             if(i == j){
                 return;
             }
             create_path(i,parent[j],parent,path);
             path.Add(new Tuple<int,int>(parent[j],j));
         }
-        public static void print_path(int i, int j,int [] parent){
+        private static void print_path(int i, int j,int [] parent){
             if(i == j){
                 Console.Write(i + " ");
                 return;
@@ -32,8 +32,16 @@ namespace ProyectoFinal{
 
         }
         public static List<Tuple<int, int> > Dijkstra(int S, int F, int[,] Adj){
+			
             int n = Adj.GetLength(0);
-            int [] dist = new int[n];
+			for (int i = 0; i < n; i++) {
+				for (int j = 0; j < n; j++) {
+					Console.Write (Adj [i, j] + " ");
+				}
+				Console.WriteLine ();
+			}
+
+			int [] dist = new int[n];
             bool [] vis = new bool[n];
             int [] parent = new int[n];
 
@@ -61,7 +69,7 @@ namespace ProyectoFinal{
                 }
             }
             if(parent[F] == -1) return null;
-            //print_path(S,F,parent);
+            print_path(S,F,parent);
             List<Tuple<int, int> > path = new List<Tuple<int,int> >();
             create_path(S,F,parent,path);
             return path;
@@ -80,27 +88,29 @@ namespace ProyectoFinal{
             }
             return other;
         }
-        public static void Main(){
+   /*     public static void Main(){
             INF = 1000000;
             int [,] AdjMat = new int[,] {
                 // A   B   C   D   E   F
                 {  0,  7,  2,INF,INF,INF},//A
                 {INF,  0,INF,INF,  5,INF},//B
-                {INF,INF,  0,  1,INF,INF},//C
+                {INF,  1,  0,  1,INF,INF},//C
                 {  3,INF,INF,  0,  4,INF},//D
                 {INF,INF,  9,INF,  0,INF},//E
-                {INF,INF,INF,  8,  6,  0} //E
+                {INF,INF,INF,  8,  6,  0} //F
             };
-            List<Tuple<int,int> > path = Dijkstra(0,4, AdjMat);
+            List<Tuple<int,int> > path = Dijkstra(4,1, AdjMat);
             foreach(var x in path){
                 Console.WriteLine(x.Item1 + " " + x.Item2);
             }
             Console.WriteLine();
-            path = OtherPath(0,4, AdjMat);
+            path = OtherPath(4,1, AdjMat);
+            if(path != null)
             foreach(var x in path){
                 Console.WriteLine(x.Item1 + " " + x.Item2);
             }
             Console.WriteLine();
         }
+	*/
     }
 }
