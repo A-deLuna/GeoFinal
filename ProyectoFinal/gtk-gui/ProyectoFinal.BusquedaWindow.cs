@@ -57,6 +57,10 @@ namespace ProyectoFinal
 		private global::Gtk.RadioButton radiobutton1;
 		
 		private global::Gtk.Button button96;
+		
+		private global::Gtk.Label label8;
+		
+		private global::Gtk.Label label9;
 
 		protected virtual void Build ()
 		{
@@ -292,6 +296,22 @@ namespace ProyectoFinal
 			global::Gtk.Fixed.FixedChild w26 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.button96]));
 			w26.X = 660;
 			w26.Y = 170;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label8 = new global::Gtk.Label ();
+			this.label8.Name = "label8";
+			this.label8.LabelProp = global::Mono.Unix.Catalog.GetString ("Totales");
+			this.fixed1.Add (this.label8);
+			global::Gtk.Fixed.FixedChild w27 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label8]));
+			w27.X = 581;
+			w27.Y = 518;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label9 = new global::Gtk.Label ();
+			this.label9.Name = "label9";
+			this.label9.LabelProp = global::Mono.Unix.Catalog.GetString ("total vertices");
+			this.fixed1.Add (this.label9);
+			global::Gtk.Fixed.FixedChild w28 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label9]));
+			w28.X = 540;
+			w28.Y = 550;
 			this.Add (this.fixed1);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();

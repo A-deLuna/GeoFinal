@@ -78,6 +78,7 @@ namespace ProyectoFinal{
         public static List<Tuple<int, int> > OtherPath(int S, int F, int[,] Adj){
             List<Tuple<int, int> > originalPath = Dijkstra(S,F,Adj);
             List<Tuple<int, int> > other = null;
+			if (originalPath != null)
             for(int i = 0; i <originalPath.Count; i ++){
                 Tuple<int, int> edge = originalPath[i];
                 int savedCost = Adj[edge.Item1,edge.Item2];

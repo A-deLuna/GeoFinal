@@ -1073,6 +1073,26 @@
             <property name="Y">170</property>
           </packing>
         </child>
+        <child>
+          <widget class="Gtk.Label" id="label8">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Totales</property>
+          </widget>
+          <packing>
+            <property name="X">581</property>
+            <property name="Y">518</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label9">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">total vertices</property>
+          </widget>
+          <packing>
+            <property name="X">540</property>
+            <property name="Y">550</property>
+          </packing>
+        </child>
       </widget>
     </child>
   </widget>

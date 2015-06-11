@@ -57,10 +57,13 @@
     </Reference>
     <Reference Include="Mono.Posix" />
     <Reference Include="Npgsql">
-      <HintPath>..\Npgsql-2.2.3-net45\Npgsql.dll</HintPath>
+      <HintPath>..\..\..\Downloads\Npgsql-2.2.3-net45\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Mono.Cairo" />
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\Downloads\Npgsql-2.2.3-net45\Mono.Security.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -92,5 +95,11 @@
   <ItemGroup>
     <Folder Include="Puntos\" />
     <Folder Include="Rutas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="maxresdefault.jpg">
+      <DeployService-Deploy>True</DeployService-Deploy>
+      <LogicalName>aaa</LogicalName>
+    </Content>
   </ItemGroup>
 </Project>
